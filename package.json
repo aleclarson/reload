@@ -1,0 +1,9 @@
+{
+  "name": "reload",
+  "version": "1.1.4",
+  "description": "Reload the page while preserving application state",
+  "dependencies": {
+    "json": "aleclarson/json#1.0.4",
+    "underscore": "aleclarson/underscore#1.5.2"
+  }
+}
