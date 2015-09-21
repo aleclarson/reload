@@ -1,3 +1,4 @@
+
 /**
  * This code does _NOT_ support hot (session-restoring) reloads on
  * IE6,7. It only works on browsers with sessionStorage support.
@@ -31,7 +32,10 @@
 // useful for apps using `window.onbeforeunload`. See
 // https://github.com/meteor/meteor/pull/657
 
-Reload = {};
+var JSON = require('json');
+var _ = require('underscore');
+
+var Reload = {};
 
 var KEY_NAME = 'Meteor_Reload';
 
@@ -225,3 +229,5 @@ Reload._reload = function (options) {
 
   tryReload();
 };
+
+module.exports = Reload;

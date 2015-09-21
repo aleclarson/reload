@@ -1,14 +1,24 @@
-# reload
 
-The `reload` package handles the process of *migrating* an app:
-serializing the app's state, then shutting down and restarting the app
-(for example, to load updated client code or to move the client
-session from one JavaScript virtual machine to another), and finally
-restoring its state.
+# reload v1.1.4 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-Packages that want to participate in the migration process register
-with `reload`. They can make the migration process wait until they are
-ready and include whatever state they may possess in the serialization
-and deserialization process.
+This package is stripped from [meteor/reload](https://atmospherejs.com/meteor/reload) and made compatible with [React Native](https://github.com/facebook/react-native).
 
-`reload` is part of the [Webapp](https://www.meteor.com/webapp) project.
+**Note:** This package is only for client-side usage.
+
+&nbsp;
+
+## usage
+
+```js
+var Reload = require('reload');
+```
+
+Read the source code for more info.
+
+&nbsp;
+
+## install
+
+```sh
+npm install aleclarson/reload#1.1.4
+```
